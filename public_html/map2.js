@@ -7,7 +7,6 @@ $(function () {
         getIp: function () {
 
             $("#submit").click(function () {
-                ipArray =[];
                 $("#sidebar").empty();
                 var myIp = $("#ip").val(),
                 url = "http://ip-api.com/json/" + myIp;
@@ -101,20 +100,7 @@ $(function () {
             });
         }
     };
-    $("#reset").click (function() {
-        location.reload();
-    });
 
     window.onload = model.getIp;
 });
-
-
-
-
-
-
-
-
-
-
 

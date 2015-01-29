@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -9,35 +10,55 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-         <link href ="newcss.css" rel ="stylesheet">  
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href ="newcss.css" rel ="stylesheet">  
+        <link rel="stylesheet" type="text/css" href="sweet-alert.css">
         <script type="text/javascript"
         src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-       
-         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <!-- <script src = "Yourjavascriptfile.js"></script>-->
+        <script src="sweet-alert.js"></script>
         <script src ="map.js"></script>
     </head>
     <body>
-      
+
         <div id ="container">
             <h2> Welcome </h2>
             <form>
                 Enter your ip address:<br>
-                <input type = "text" id ="ip" value ="Your ip">
-                <input type ="text" id ="type" value ="type of store">
+                <input type = "text" id ="ip" value ="72.88.180.10">
+
+                <select id = "opt">
+                    <option value ="store">Store</option>
+                    <option value ="lodging">Hotel</option>
+                    <option value ="bank">Bank</option>
+                    <option value ="pharmacy">Pharmacy</option>
+                    <option value ="hospital">Hospital</option>
+                    <option value ="synagogue">Shul</option>
+                    <option value ="bakery">Bakery</option>
+                    <option value ="car_dealer">Car Dealer</option>
+                    <option value ="clothing_store">Clothing Store</option>
+                    <option value ="doctor">Doctor</option>
+                    <option value ="grocery_or_supermarket">Grocery</option>
+                    <option value ="shopping_mall">Mall</option>
+                    <option value ="park">Park</option>
+
+                </select>
                 <input type ="button" id= "submit" class ="btn-lg btn-success" value = "Submit">
+                 <input type ="button" id= "reset" class ="btn-lg btn-danger" value = "Reset">
             </form>
-              <div id="sidebar">sidebar
-              <ul id="theList" class="item"></ul>
-</div>
-            <div id ="map" style="width:1000px;height:500px;">hi</div>
-                </div>
-        
+        </div>
+        <div id="sidebar">
+            <ul id="theList" class="item"></ul>
+        </div>
+        <div id ="map" style="width:1000px;height:1000px;"></div>
+
+
     </body>
 </html>
 

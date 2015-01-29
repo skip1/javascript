@@ -7,14 +7,21 @@ and open the template in the editor.
     Created on : Jan 28, 2015, 11:28:08 AM
     Author     : sam
 */
-html container { height: 100%;
-        position: absolute;
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#container { width: 60%;
+        margin: 0px auto;
+        
+        
 }
 
 #sidebar { 
            height: 1000px;
            float: right;
-           width: 25%;
+           width: 20%;
            overflow: hidden;
            border: 3px solid darkGray;
            position: relative;
